@@ -335,6 +335,11 @@ on enable-low-power
     # ZRAM parameters
     write /sys/block/zram0/disksize 1073741824
 
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
+    start vendor.per_proxy
+
 on property:sys.boot_completed=1
     trigger enable-low-power
 
