@@ -94,6 +94,9 @@ vendor.qcom.bluetooth.soc=cherokee
 debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
 
+# Charger
+ro.charger.enable_suspend=true
+
 # Display post-processing
 ro.vendor.display.cabl=2
 
