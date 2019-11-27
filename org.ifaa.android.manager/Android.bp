@@ -24,7 +24,4 @@ java_library {
     libs: [
         "unsupportedappusage",
     ],
-    aidl: {
-        local_include_dirs: ["src"],
-    },
 }
