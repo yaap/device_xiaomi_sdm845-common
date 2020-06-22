@@ -84,6 +84,9 @@ telephony.lteOnCdmaDevice=1
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
+
 # SurfaceFlinger
 debug.sf.enable_gl_backpressure=1
 debug.sf.early_phase_offset_ns=500000
