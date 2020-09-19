@@ -402,3 +402,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/sdm845 \
     hardware/qcom-caf/wlan
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
