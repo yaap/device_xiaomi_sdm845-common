@@ -243,7 +243,6 @@ vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # DPM
-product/bin/dpmd
 product/etc/dpm/dpm.conf
 product/etc/init/dpmd.rc
 product/etc/permissions/com.qti.dpmframework.xml
@@ -253,12 +252,10 @@ product/framework/dpmapi.jar
 product/lib/com.qualcomm.qti.dpm.api@1.0.so
 product/lib/libdpmctmgr.so
 product/lib/libdpmfdmgr.so
-product/lib/libdpmframework.so
 product/lib/libdpmtcm.so
 product/lib64/com.qualcomm.qti.dpm.api@1.0.so
 product/lib64/libdpmctmgr.so
 product/lib64/libdpmfdmgr.so
-product/lib64/libdpmframework.so
 product/lib64/libdpmtcm.so
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk
 system/framework/tcmclient.jar
