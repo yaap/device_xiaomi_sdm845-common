@@ -245,6 +245,8 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
     libc2dcolorconvert \
     libOmxAacEnc \
     libOmxAmrEnc \
