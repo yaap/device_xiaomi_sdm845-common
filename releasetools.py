@@ -40,24 +40,7 @@ def AddImage(info, input_zip, basename, dest):
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
 
 def OTA_UpdateFirmware(info):
-  info.script.AppendExtra('ui_print("Flashing firmware images");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/abl.elf", "/dev/block/bootdevice/by-name/abl_a");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/abl.elf", "/dev/block/bootdevice/by-name/abl_b");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/cmnlib64.img", "/dev/block/bootdevice/by-name/cmnlib64_a");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/aop.img", "/dev/block/bootdevice/by-name/aop_a");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/devcfg.img", "/dev/block/bootdevice/by-name/devcfg_a");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/qupfw.img", "/dev/block/bootdevice/by-name/qupfw_a");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/tz.img", "/dev/block/bootdevice/by-name/tz_a");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/storsec.img", "/dev/block/bootdevice/by-name/storsec_a");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/keymaster.img", "/dev/block/bootdevice/by-name/keymaster_a");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/bluetooth.img", "/dev/block/bootdevice/by-name/bluetooth");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/xbl.img", "/dev/block/bootdevice/by-name/xbl_a");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/modem.img", "/dev/block/bootdevice/by-name/modem");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/xbl_config.img", "/dev/block/bootdevice/by-name/xbl_config_a");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/dsp.img", "/dev/block/bootdevice/by-name/dsp");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/logo.img", "/dev/block/bootdevice/by-name/logo");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/cmnlib.img", "/dev/block/bootdevice/by-name/cmnlib_a");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/hyp.img", "/dev/block/bootdevice/by-name/hyp_a");')
+  info.script.AppendExtra('ui_print("Please flash firmware yourself if you need");')
 
 def OTA_InstallEnd(info, input_zip):
   AddImage(info, input_zip, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
