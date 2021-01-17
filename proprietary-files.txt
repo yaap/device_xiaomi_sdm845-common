@@ -464,7 +464,6 @@ system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so|57deaffcde2e656e45191d1c4d0b135
 system_ext/lib64/vendor.qti.imsrtpservice@2.0.so|ce91ba09320bc7ff00603cede86a47992b6f531d
 system_ext/lib64/vendor.qti.imsrtpservice@2.1.so|fd4beca460db72476989f5b7f2ce2cef4fde6b18
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|393c5affc1e8e36470705ec44396d1ffa603a541
--system_ext/priv-app/ims/ims.apk|f19b7830b11e84871930af7a6e90cccd66aa0044
 vendor/bin/ims_rtp_daemon|2c995a884bbde9f37a44a10ac8fb694b30af97ea
 vendor/bin/imsdatadaemon|eb09aed86816127ef752c07c027d3ede9000f549
 vendor/bin/imsqmidaemon|72f9810942d727b7608a96dc481346ec3c97b9c6
@@ -541,6 +540,10 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|0cc321ecc4d68f4951bfc3c47e6d64af55d
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|ae519b1c906e60b66e885922e620f456548f14dd
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|6302b61d7d1580254c091cce8ad5e121dbd73ace
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161cc1bcf
+
+# Radio - from LA.QSSI.11.0.r1-09400-qssi.0
+system_ext/framework/qti-telephony-common.jar|710406e01836b558c802ba4960fa59f31545389e
+-system_ext/priv-app/ims/ims.apk|cccc15a4fbaff0f412e09e63744fc95c3c339da8
 
 # IO prefetcher
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
@@ -762,7 +765,6 @@ system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625
 system_ext/etc/permissions/telephonyservice.xml|b7831598d3c19c6ce4ef431d1cc44d94c3c35a8d
 system_ext/framework/QtiTelephonyServicelibrary.jar|ee040ed40595a0c5871780b1d5be753954ae523d
 system_ext/framework/qcrilhook.jar|fba9db045c8c167a78f2bcce0c00a3f83b1a792e
-system_ext/framework/qti-telephony-common.jar|91fe0ce296fc29bece6df81070b9b3b4ee41a1b4
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|4f2e166f4094ae07e1bd75ec5e4bd74610ee8ebc
 -vendor/app/IWlanService/IWlanService.apk|1fa0101bc987387dd70ea7d69c84fd5d117fe81d
 vendor/bin/adpl|4ee2aa7fb4363ddfcacf67800e61e5b68aedae20
