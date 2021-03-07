@@ -288,7 +288,24 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml
+    $(LOCAL_PATH)/perf/configs/common/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
+    $(foreach file,$(wildcard $(LOCAL_PATH)/perf/configs/sdm845/perf/*),$(file):$(TARGET_COPY_OUT_VENDOR)/etc/perf/$(notdir $(file))) \
+    $(foreach file,$(wildcard $(LOCAL_PATH)/perf/configs/sdm845/msm_irqbalance.conf),$(file):$(TARGET_COPY_OUT_VENDOR)/etc/$(notdir $(file)))
+    
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0 \
+    init.aospa.perf.rc \
+    libpsi.vendor \
+    libtflite \
+    vendor.qti.hardware.servicetracker@1.2.vendor
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=libqti-perfd-client.so \
+    vendor.power.pasr.enabled=true
 
 # Power
 PRODUCT_PACKAGES += \
