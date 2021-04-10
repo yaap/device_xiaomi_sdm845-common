@@ -183,10 +183,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.3-service.clearkey
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.2-service.xiaomi_sdm845
-
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl:64 \
@@ -401,10 +397,6 @@ BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sdm845/media
 SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sdm845/display
 SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sdm845/audio
-
-PRODUCT_SOONG_NAMESPACES += \
-    hardware/qcom-caf/sdm845 \
-    hardware/qcom-caf/wlan
 
 # Protobuf
 PRODUCT_PACKAGES += \
