@@ -144,7 +144,6 @@ VENDOR_SECURITY_PATCH := 2020-05-01
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
-SELINUX_IGNORE_NEVERALLOWS_ON_USER := true
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
